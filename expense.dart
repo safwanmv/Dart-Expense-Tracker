@@ -9,7 +9,7 @@ void main() {
     clearTerminal();
     print("--------------------------");
     print(
-      "1. Add Expense \n 2.View Expense \n 3.DeletExpense \n 4.Edit Expense \n 5.Clear full Data  \n 6.Quit  \n Enter your Choice: ",
+      " 1.Add Expense \n 2.View Expense \n 3.DeletExpense \n 4.Edit Expense \n 5.Clear full Data  \n 6.Quit  \n Enter your Choice: ",
     );
     try {
       int? choice = int.parse(stdin.readLineSync()!);
@@ -112,7 +112,7 @@ void deleteExpense() {
 
 void editExpense() {
   if (expense.isEmpty) {
-    print(" !! Enter an Expense !!!!");
+    print(" !! Expense is Empty !!");
 
     return;
   }
